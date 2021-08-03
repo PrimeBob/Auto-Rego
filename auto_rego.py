@@ -227,4 +227,4 @@ for i in range(len(harvestfield.email)):
             continue
     
 
-driver.close()
+web.close()
