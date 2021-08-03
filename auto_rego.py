@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-#version 1.0
-
 
 # In[19]:
 
@@ -34,7 +32,7 @@ print("updating program...")
 
 #removing local version
 try:
-    shutil.rmtree('/Users/innovatus6/Desktop/auto-rego/bin')
+    os.remove('/Users/innovatus6/Desktop/auto-rego/bin/auto_rego.py')
     
 except:    
     print("no bin to deleted")
@@ -227,4 +225,9 @@ for i in range(len(harvestfield.email)):
             continue
     
 
-web.close()
+
+# In[ ]:
+
+
+driver.close()
+
