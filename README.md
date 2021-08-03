@@ -1,7 +1,11 @@
-# Auto-rego
-automatically registers attendees to an AWS event
+**#Auto-rego**
+What this programs does:
+-Automatically registers attendees to a bigmarker form
+
+Inputs:
+-Googlesheet
 
 
 
-#input are data from google sheets
-output is a prefilled aws registration sheet (submit button not pressed)
+
+
