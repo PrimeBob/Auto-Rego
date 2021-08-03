@@ -229,5 +229,5 @@ for i in range(len(harvestfield.email)):
 # In[ ]:
 
 
-driver.close()
+web.close()
 
