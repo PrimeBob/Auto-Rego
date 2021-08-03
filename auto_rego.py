@@ -33,6 +33,8 @@ print("updating program...")
 #removing local version
 try:
     os.remove('/Users/innovatus6/Desktop/auto-rego/bin/auto_rego.py')
+    os.remove('/Users/innovatus6/Desktop/auto-rego/bin/README.md')
+    os.remove('/Users/innovatus6/Desktop/auto-rego/bin/requirements.txt')
     
 except:    
     print("no bin to deleted")
