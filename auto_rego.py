@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[145]:
+# In[19]:
 
 
 from selenium import webdriver
@@ -21,6 +21,35 @@ import pprint
 import gspread
 import math
 from selenium.webdriver.chrome.options import Options
+import git
+from git import Repo
+
+
+# In[39]:
+
+
+print("updating program...")
+
+#removing local version
+try:
+    shutil.rmtree('/Users/innovatus6/Desktop/auto-rego/bin')
+    
+except:    
+    print("no bin to deleted")
+    
+    
+    
+time.sleep(5)
+
+#cloning from the latest version
+path='/Users/innovatus6/Desktop/auto-rego/bin'
+clone="https://github.com/PrimeBob/Auto-rego"
+
+
+Repo.clone_from(clone, path)
+
+
+print("updating completed")
 
 
 # In[146]:
