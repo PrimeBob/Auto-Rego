@@ -43,7 +43,7 @@ options.add_experimental_option('useAutomationExtension', False)
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
 #wd for authentiction file
-os.chdir('/Users/'+getpass.getuser())
+os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego)
 creds = ServiceAccountCredentials.from_json_keyfile_name('linkupdater-631ef6e77556.json', scope)
 
 
@@ -58,8 +58,9 @@ client = gspread.authorize(creds)
 
 
 #opening production sheet
-sheet= client.open("Master Data Builds").worksheet("Invitation List")
+f=pd.read_csv('input.csv').event[0]
 
+sheet= client.open(f).worksheet("Invitation List")
 
 # In[150]:
 
@@ -93,7 +94,7 @@ countrydictionary={
 # In[154]:
 
 
-web = webdriver.Chrome(chrome_options=options, executable_path='/Users/'+getpass.getuser()+'/chromedriver')
+web = webdriver.Chrome(chrome_options=options, executable_path='/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin/chromedriver')
 
 ##the below code fills in the registration page and submits it
 for i in range(len(harvestfield.email)):        
