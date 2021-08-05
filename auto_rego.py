@@ -23,6 +23,7 @@ import math
 from selenium.webdriver.chrome.options import Options
 import git
 from git import Repo
+import getpass
 
 
 # In[146]:
@@ -42,7 +43,7 @@ options.add_experimental_option('useAutomationExtension', False)
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
 #wd for authentiction file
-os.chdir('/Users/innovatus6')
+os.chdir('/Users/'+getpass.getuser())
 creds = ServiceAccountCredentials.from_json_keyfile_name('linkupdater-631ef6e77556.json', scope)
 
 
@@ -92,7 +93,7 @@ countrydictionary={
 # In[154]:
 
 
-web = webdriver.Chrome(chrome_options=options, executable_path='/Users/innovatus6/chromedriver')
+web = webdriver.Chrome(chrome_options=options, executable_path='/Users/'+getpass.getuser()+'/chromedriver')
 
 ##the below code fills in the registration page and submits it
 for i in range(len(harvestfield.email)):        
