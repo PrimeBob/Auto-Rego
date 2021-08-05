@@ -94,7 +94,7 @@ countrydictionary={
 # In[154]:
 
 
-web = webdriver.Chrome(chrome_options=options, executable_path='/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin/chromedriver')
+web = webdriver.Chrome(chrome_options=options, executable_path='/Users/'+getpass.getuser()+'/Desktop/auto-rego/chromedriver')
 
 ##the below code fills in the registration page and submits it
 for i in range(len(harvestfield.email)):        
