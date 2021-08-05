@@ -43,7 +43,7 @@ options.add_experimental_option('useAutomationExtension', False)
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
 #wd for authentiction file
-os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego)
+os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 creds = ServiceAccountCredentials.from_json_keyfile_name('linkupdater-631ef6e77556.json', scope)
 
 
