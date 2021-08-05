@@ -57,7 +57,7 @@ client = gspread.authorize(creds)
 
 
 #opening production sheet
-sheet= client.open("Master Data Builds").worksheet("test1")
+sheet= client.open("Master Data Builds").worksheet("Invitation List")
 
 
 # In[150]:
