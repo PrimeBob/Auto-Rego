@@ -47,7 +47,7 @@ def git_pull_change(path):
         return False
     else:
         print("Updated! Please run auto-rego again")
-        sys.exit(0)
+        exit(0)
         return True
 
 #actually running the function itself    
