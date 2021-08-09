@@ -37,7 +37,7 @@ g = git.Git()
 g.pull('https://github.com/PrimeBob/Auto-Rego')
 
 
-#this is is the 3rd checkpoint
+print("this is the 4th checkpoint")
 
 
 
