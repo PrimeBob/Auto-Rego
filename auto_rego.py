@@ -33,14 +33,24 @@ import getpass
 #udating this script
 os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
-g = git.Git()
-g.pull('https://github.com/PrimeBob/Auto-Rego')
 
+#the below block checks if auto-rego has been updated
+def git_pull_change(path):
+    repo = git.Repo(path)
+    current = repo.head.commit
 
-print("this is the 5th checkpoint")
+    repo.remotes.origin.pull()
 
+    if current == repo.head.commit:
+        print("No new updates were found")
+        return False
+    else:
+        print("Updated! Please run auto-rego again")
+        sys.exit(0)
+        return True
 
-
+#actually running the function itself    
+git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
 
 
