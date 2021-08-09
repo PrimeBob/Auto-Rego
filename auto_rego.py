@@ -230,4 +230,5 @@ for i in range(len(harvestfield.email)):
 
 
 web.close()
+web.quit()
 
