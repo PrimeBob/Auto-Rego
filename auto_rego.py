@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#hello! this is a test line to see if git has updated this file
 
 # In[19]:
 
@@ -28,7 +27,17 @@ from git import Repo
 import getpass
 
 
+
 # In[146]:
+
+#udating this script
+os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
+
+g = git.Git()
+g.pull('https://github.com/PrimeBob/Auto-Rego')
+
+
+
 
 
 ##removing the annoying tab that toggles and says something like: chrome is monitoring automated something something 
@@ -45,7 +54,6 @@ options.add_experimental_option('useAutomationExtension', False)
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
 #wd for authentiction file
-os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 creds = ServiceAccountCredentials.from_json_keyfile_name('linkupdater-631ef6e77556.json', scope)
 
 
