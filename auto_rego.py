@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#checkpoint9
+#checkpoint10
 
 # In[19]:
 
@@ -28,17 +28,13 @@ from git import Repo
 import getpass
 
 
-
 # In[146]:
 
 #udating this script
 os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
-#pulling
+#defining pulling
 g = git.Git()
-g.pull('https://github.com/PrimeBob/Auto-Rego')
-
-
 
 #the below block checks if auto-rego has been updated
 def git_pull_change(path):
@@ -58,6 +54,9 @@ def git_pull_change(path):
 #actually running the function itself    
 git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
+
+#actually pulling
+g.pull('https://github.com/PrimeBob/Auto-Rego')
 
 
 ##removing the annoying tab that toggles and says something like: chrome is monitoring automated something something 
