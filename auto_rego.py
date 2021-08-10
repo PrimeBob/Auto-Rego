@@ -34,6 +34,11 @@ import getpass
 #udating this script
 os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin')
 
+#pulling
+g = git.Git()
+g.pull('https://github.com/PrimeBob/Auto-Rego')
+
+
 
 #the below block checks if auto-rego has been updated
 def git_pull_change(path):
