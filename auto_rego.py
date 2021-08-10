@@ -32,7 +32,7 @@ import getpass
 # In[146]:
 
 #udating this script
-os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
+os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin')
 
 
 #the below block checks if auto-rego has been updated
@@ -51,7 +51,7 @@ def git_pull_change(path):
         return True
 
 #actually running the function itself    
-git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
+git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin')
 
 
 
@@ -119,7 +119,7 @@ countrydictionary={
 # In[154]:
 
 
-web = webdriver.Chrome(options=options, executable_path='/Users/'+getpass.getuser()+'/Desktop/auto-rego/chromedriver')
+web = webdriver.Chrome(options=options, executable_path='/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin/chromedriver')
 
 ##the below code fills in the registration page and submits it
 for i in range(len(harvestfield.email)):        
