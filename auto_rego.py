@@ -32,7 +32,7 @@ import getpass
 # In[146]:
 
 #udating this script
-os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin')
+os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
 #pulling
 g = git.Git()
@@ -56,7 +56,7 @@ def git_pull_change(path):
         return True
 
 #actually running the function itself    
-git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego/bin')
+git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
 
 
