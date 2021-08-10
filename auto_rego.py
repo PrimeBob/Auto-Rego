@@ -33,8 +33,6 @@ import getpass
 #udating this script
 os.chdir('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
 
-#defining pulling
-g = git.Git()
 
 #the below block checks if auto-rego has been updated
 def git_pull_change(path):
@@ -53,6 +51,10 @@ def git_pull_change(path):
 
 #actually running the function itself    
 git_pull_change('/Users/'+getpass.getuser()+'/Desktop/auto-rego')
+
+
+#defining pulling
+g = git.Git()
 
 
 #actually pulling
